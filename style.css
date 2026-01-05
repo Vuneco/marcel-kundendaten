@@ -52,3 +52,14 @@ button {
   .grid { grid-template-columns: 1fr; }
 }
 
+textarea {
+  padding: 10px 12px;
+  border: 1px solid #d8dbe6;
+  border-radius: 12px;
+  font-size: 15px;
+  outline: none;
+  min-height: 110px;
+  resize: vertical;
+}
+textarea:focus { border-color: #94a3b8; }
+
