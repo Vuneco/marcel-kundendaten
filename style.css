@@ -83,11 +83,11 @@ textarea { grid-column: 1 / -1; }
 }
 
 .brand-logos img {
-  height: 34px;
-  max-width: 120px;
+  height: 48px;
+  max-width: 160px;
   object-fit: contain;
   filter: grayscale(100%);
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 .brand-divider {
@@ -105,8 +105,10 @@ textarea { grid-column: 1 / -1; }
 /* Mobile etwas kompakter */
 @media (max-width: 480px) {
   .brand-logos img {
-    height: 28px;
+    height: 38px;
+    max-width: 140px;
   }
 }
+
 
 
