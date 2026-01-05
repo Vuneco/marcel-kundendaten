@@ -66,3 +66,47 @@ textarea:focus { border-color: #94a3b8; }
 /* optional: über beide Spalten */
 textarea { grid-column: 1 / -1; }
 
+/* Branding unter PIN */
+.pin-branding {
+  margin-top: 28px;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.brand-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.brand-logos img {
+  height: 34px;
+  max-width: 120px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+
+.brand-divider {
+  width: 120px;
+  height: 1px;
+  background: #e5e7eb;
+  margin: 0 auto 10px auto;
+}
+
+.brand-footer {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Mobile etwas kompakter */
+@media (max-width: 480px) {
+  .brand-logos img {
+    height: 28px;
+  }
+}
+
+
