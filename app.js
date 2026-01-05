@@ -1,5 +1,5 @@
 // 1) HIER deine Apps Script Web-App URL eintragen:
-const ENDPOINT = "https://script.google.com/macros/s/AKfycby8P1bOKW5qwWlmecGUdT8ILNZ9mrBKmwMRCUvRMbBhslF4O6D-sV11FwGHFv8rWVPZ/exec";
+const ENDPOINT = "https://script.google.com/macros/s/AKfycbxCs0vAbmjDcB8LI9umJQcqcjsXl--moDwrknx8ufaQUhe2bBInCzq3t7RJqBF7Gx1h/exec";
 const pinGate = document.getElementById("pinGate");
 const formCard = document.getElementById("formCard");
 const pinInput = document.getElementById("pin");
