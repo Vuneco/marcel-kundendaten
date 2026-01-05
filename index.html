@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privates Formular</title>
+  <title>Kundendaten</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,11 +12,13 @@
 
     <section id="pinGate" class="card">
       <h2>PIN eingeben</h2>
-      <p>Bitte 3-stelligen PIN eingeben.</p>
+      <p>Bitte 3-stelligen PIN eingeben. Erst nach erfolgreicher Prüfung wird das Formular freigeschaltet.</p>
+
       <div class="row">
         <input id="pin" inputmode="numeric" maxlength="3" placeholder="PIN (z.B. 123)" />
-        <button id="unlock">OK</button>
+        <button id="unlock" type="button">OK</button>
       </div>
+
       <div id="pinMsg" class="msg"></div>
     </section>
 
@@ -57,8 +59,8 @@
             <input name="telefon" inputmode="tel" required />
           </label>
 
-          <label>Email-Adresse
-            <input name="emailadresse" inputmode="email" required />
+          <label>Email-Adresse (optional)
+            <input name="emailadresse" type="email" placeholder= "optional" />
           </label>
 
           <label>Zählernummer
@@ -72,11 +74,13 @@
               <option value="strom">Strom</option>
             </select>
           </label>
+          
         </div>
 
         <div class="row">
-          <button type="submit">Speichern</button>
+          <button type="submit" id="saveBtn">Speichern</button>
           <button type="button" id="clear">Leeren</button>
+          <button type="button" id="lock">Sperren</button>
         </div>
 
         <div id="formMsg" class="msg"></div>
