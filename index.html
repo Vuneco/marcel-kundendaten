@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privates Formular</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>Datenerfassung</h1>
+
+    <section id="pinGate" class="card">
+      <h2>PIN eingeben</h2>
+      <p>Bitte 3-stelligen PIN eingeben.</p>
+      <div class="row">
+        <input id="pin" inputmode="numeric" maxlength="3" placeholder="PIN (z.B. 123)" />
+        <button id="unlock">OK</button>
+      </div>
+      <div id="pinMsg" class="msg"></div>
+    </section>
+
+    <section id="formCard" class="card hidden">
+      <h2>Eintrag</h2>
+
+      <form id="dataForm">
+        <div class="grid">
+          <label>Datum
+            <input name="datum" type="date" required />
+          </label>
+
+          <label>Geburtsdatum
+            <input name="geburtsdatum" type="date" required />
+          </label>
+
+          <label>Vorname
+            <input name="vorname" required />
+          </label>
+
+          <label>Nachname
+            <input name="nachname" required />
+          </label>
+
+          <label>Straße
+            <input name="strasse" required />
+          </label>
+
+          <label>PLZ
+            <input name="plz" inputmode="numeric" required />
+          </label>
+
+          <label>Wohnort
+            <input name="wohnort" required />
+          </label>
+
+          <label>Telefonnummer
+            <input name="telefon" inputmode="tel" required />
+          </label>
+
+          <label>Zählernummer
+            <input name="zaehlernummer" required />
+          </label>
+
+          <label>Typ
+            <select name="typ" required>
+              <option value="">Bitte wählen</option>
+              <option value="gas">Gas</option>
+              <option value="strom">Strom</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="row">
+          <button type="submit">Speichern</button>
+          <button type="button" id="clear">Leeren</button>
+        </div>
+
+        <div id="formMsg" class="msg"></div>
+      </form>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
