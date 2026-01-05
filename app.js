@@ -1,5 +1,5 @@
 // 1) HIER deine Apps Script Web-App URL eintragen:
-const ENDPOINT = "https://script.google.com/macros/s/AKfycbw0svKBib4KB593dkQvzgDQhNGOnoDM7ZU3kuabXOMaMnRh0T0XWhNvfQnZg9MLrHj8/exec";
+const ENDPOINT = "https://script.google.com/macros/s/AKfycbzDLTaIozGYz6amZHZh90RrsrwUHKL4F1c2AdwFXc1pJe13lvXh9ckcgHDeA5hD32cf/exec";
 
 
 const pinGate = document.getElementById("pinGate");
