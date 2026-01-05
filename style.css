@@ -105,8 +105,8 @@ textarea { grid-column: 1 / -1; }
 /* Mobile etwas kompakter */
 @media (max-width: 480px) {
   .brand-logos img {
-    height: 38px;
-    max-width: 140px;
+    height: 48px;
+    max-width: 160px;
   }
 }
 
