@@ -149,6 +149,28 @@ textarea { grid-column: 1 / -1; }
   text-align: center;
 }
 
+/* Gruppen: nehmen beide Grid-Spalten ein und bilden innen eigene Reihen */
+.group {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 12px;
+}
+
+.group-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.group-3 {
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1fr);
+}
+
+/* Mobile: Gruppen wieder untereinander */
+@media (max-width: 760px) {
+  .group-2, .group-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Mobile etwas kompakter */
 @media (max-width: 480px) {
   .brand-logos img {
