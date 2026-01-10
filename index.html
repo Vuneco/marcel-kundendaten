@@ -57,8 +57,18 @@
           </label>
 
           <label>Straße
-            <input name="strasse" required />
-          </label>
+  <div class="street-row">
+    <input name="strasse" required />
+    <input
+      name="hausnummer"
+      placeholder="Nr."
+      inputmode="numeric"
+      maxlength="5"
+      required
+      class="house-number"
+    />
+  </div>
+</label>
 
           <label>PLZ
             <input name="plz" inputmode="numeric" required />
