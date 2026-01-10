@@ -133,6 +133,22 @@ textarea { grid-column: 1 / -1; }
   filter: none;
 }
 
+/* Straße + Hausnummer nebeneinander */
+.street-row {
+  display: flex;
+  gap: 8px;
+}
+
+.street-row input:first-child {
+  flex: 1;
+}
+
+/* kleines Hausnummer-Feld */
+.house-number {
+  width: 90px;
+  text-align: center;
+}
+
 /* Mobile etwas kompakter */
 @media (max-width: 480px) {
   .brand-logos img {
